@@ -104,7 +104,7 @@ data/             local persistence (the app reads/writes only here)
 docs/
   SPEC.md         full functional + technical specification (as built)
   DESIGN.md       design system: tokens, component patterns, CSS rules
-legacy/           pre-cutover CLI/viewer material — transitional, safe to delete
+
 ```
 
 See [docs/SPEC.md](docs/SPEC.md) for the complete specification and [docs/DESIGN.md](docs/DESIGN.md) for the design system.
