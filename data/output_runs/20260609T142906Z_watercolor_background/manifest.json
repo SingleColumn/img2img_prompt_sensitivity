@@ -1,0 +1,109 @@
+{
+  "run_id": "20260609T142906Z_watercolor_background",
+  "generated_at": "2026-06-09T14:29:06Z",
+  "prompt_set_id": "watercolor_background",
+  "input_image": "rtj_photo.jpg",
+  "execution_mode": "mock",
+  "selected_models": [
+    {
+      "id": "openai:gpt-image-2:edit",
+      "display_name": "GPT Image 2 Edit"
+    }
+  ],
+  "prompts": [
+    {
+      "key": "baseline",
+      "label": "Baseline",
+      "prompt": "Convert this image into a watercolor painting while preserving the background details.",
+      "prompt_kind": "baseline",
+      "variation_type": null,
+      "similarity_to_baseline": 1.0
+    },
+    {
+      "key": "equivalent",
+      "label": "Equivalent",
+      "prompt": "While preserving the background details, convert this image into a watercolor painting.",
+      "prompt_kind": "equivalent",
+      "variation_type": "word_order",
+      "similarity_to_baseline": null
+    },
+    {
+      "key": "variant_1",
+      "label": "Variant 1",
+      "prompt": "Convert this image into a watercolor painting while retaining the background details.",
+      "prompt_kind": "variation",
+      "variation_type": "synonym_substitution",
+      "similarity_to_baseline": null
+    },
+    {
+      "key": "variant_2",
+      "label": "Variant 2",
+      "prompt": "Convert this image into a watercolor painting while preserving the main background elements.",
+      "prompt_kind": "variation",
+      "variation_type": "semantic_broadening",
+      "similarity_to_baseline": null
+    }
+  ],
+  "items": [
+    {
+      "model_id": "openai:gpt-image-2:edit",
+      "model_display_name": "GPT Image 2 Edit",
+      "prompt_key": "baseline",
+      "prompt_label": "Baseline",
+      "prompt_kind": "baseline",
+      "variation_type": null,
+      "similarity_to_baseline": 1.0,
+      "prompt_text": "Convert this image into a watercolor painting while preserving the background details.",
+      "output_file": "openai-gpt-image-2-edit_baseline.svg",
+      "image_path": "openai-gpt-image-2-edit_baseline.svg",
+      "timestamp": "2026-06-09T14:29:06Z",
+      "request_payload": null,
+      "raw_response": null
+    },
+    {
+      "model_id": "openai:gpt-image-2:edit",
+      "model_display_name": "GPT Image 2 Edit",
+      "prompt_key": "equivalent",
+      "prompt_label": "Equivalent",
+      "prompt_kind": "equivalent",
+      "variation_type": "word_order",
+      "similarity_to_baseline": null,
+      "prompt_text": "While preserving the background details, convert this image into a watercolor painting.",
+      "output_file": "openai-gpt-image-2-edit_equivalent.svg",
+      "image_path": "openai-gpt-image-2-edit_equivalent.svg",
+      "timestamp": "2026-06-09T14:29:06Z",
+      "request_payload": null,
+      "raw_response": null
+    },
+    {
+      "model_id": "openai:gpt-image-2:edit",
+      "model_display_name": "GPT Image 2 Edit",
+      "prompt_key": "variant_1",
+      "prompt_label": "Variant 1",
+      "prompt_kind": "variation",
+      "variation_type": "synonym_substitution",
+      "similarity_to_baseline": null,
+      "prompt_text": "Convert this image into a watercolor painting while retaining the background details.",
+      "output_file": "openai-gpt-image-2-edit_variant_1.svg",
+      "image_path": "openai-gpt-image-2-edit_variant_1.svg",
+      "timestamp": "2026-06-09T14:29:06Z",
+      "request_payload": null,
+      "raw_response": null
+    },
+    {
+      "model_id": "openai:gpt-image-2:edit",
+      "model_display_name": "GPT Image 2 Edit",
+      "prompt_key": "variant_2",
+      "prompt_label": "Variant 2",
+      "prompt_kind": "variation",
+      "variation_type": "semantic_broadening",
+      "similarity_to_baseline": null,
+      "prompt_text": "Convert this image into a watercolor painting while preserving the main background elements.",
+      "output_file": "openai-gpt-image-2-edit_variant_2.svg",
+      "image_path": "openai-gpt-image-2-edit_variant_2.svg",
+      "timestamp": "2026-06-09T14:29:06Z",
+      "request_payload": null,
+      "raw_response": null
+    }
+  ]
+}

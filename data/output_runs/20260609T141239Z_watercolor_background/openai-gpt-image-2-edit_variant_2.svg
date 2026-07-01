@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2c3f"/>
+      <stop offset="55%" stop-color="#8f4e32"/>
+      <stop offset="100%" stop-color="#f1d7a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect x="36" y="36" width="952" height="952" rx="28" fill="rgba(255,248,238,0.82)" />
+  <text x="48" y="96" class="eyebrow">MOCK RUN OUTPUT</text>
+  <text x="48" y="146" class="headline">Variant 2</text>
+  <text x="48" y="176" class="meta">variation | GPT Image 2 Edit</text>
+  <text x="48" y="190" class="body">Convert this image into a watercolor painting while</text><text x="48" y="222" class="body">preserving the main background elements.</text>
+  <text x="48" y="924" class="footer">20260609T141239Z_watercolor_background</text>
+  <style>
+    .eyebrow {
+      font: 700 28px Georgia, serif;
+      letter-spacing: 0.16em;
+      fill: #9d5428;
+    }
+    .headline {
+      font: 700 54px Georgia, serif;
+      fill: #23180f;
+    }
+    .meta {
+      font: 400 28px Georgia, serif;
+      fill: #5b4637;
+    }
+    .body {
+      font: 400 28px Georgia, serif;
+      fill: #2f251d;
+    }
+    .footer {
+      font: 400 24px Georgia, serif;
+      fill: #5b4637;
+    }
+  </style>
+</svg>

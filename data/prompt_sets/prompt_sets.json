@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "embedding_model": "text-embedding-3-large",
+    "similarity_metric": "cosine_similarity",
+    "description": "Prompt sensitivity benchmark for image-to-image generation"
+  },
+  "prompt_sets": [
+    {
+      "prompt_set": "Stylised with rich background",
+      "baseline": {
+        "prompt": "Create a stylized version of the image while preserving the subject’s identity, pose, and recognizable facial features.\nKeep the face clear and unobstructed, but make the surrounding image feel visually dense and overloaded.\nUse only rich blues, electric blue accents, warm gold, and metallic highlights.\nRedesign the background with strict geometric order: angular motifs, faceted diamonds, radial patterns, and layered polygons.\nMake the background feel chaotic and magical, with glitter trails, crystalline fragments, and a diamond-fountain effect bursting upward from behind the subject.\nUse dramatic blue-to-gold gradients to create strong motion and luminous depth, while keeping the subject calm, stable, and visually dominant.\n\nAll added effects must remain behind the subject and must not overlap or occlude the face.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "Create a stylized version of the image, preserving the subject’s identity, pose, and recognizable facial features. Make the surrounding image feel visually dense and overloaded while keeping the face clear and unobstructed. Use only rich blues, electric blue accents, warm gold, and metallic highlights. With strict geometric order, redesign the background using angular motifs, faceted diamonds, radial patterns, and layered polygons. From behind the subject, create a chaotic and magical background with glitter trails, crystalline fragments, and a diamond-fountain effect bursting upward. Keep the subject calm, stable, and visually dominant while using dramatic blue-to-gold gradients for strong motion and luminous depth. All added effects must stay behind the subject and must not overlap or occlude the face.",
+          "similarity_to_baseline": 0.9746452479391206
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Transform the image into a stylized rendition while maintaining the subject’s identity, pose, and identifiable facial features. Keep the face sharp and unobstructed, while making the surrounding composition feel packed, intricate, and visually saturated. Limit the palette to deep blues, electric blue details, warm gold tones, and metallic shine. Rework the background with rigid geometric structure: sharp angular forms, cut-diamond shapes, radial designs, and stacked polygon layers. Make the background appear energetic and enchanted, with sparkling trails, crystal shards, and a diamond-fountain burst rising from behind the subject. Apply bold blue-to-gold gradients to produce dynamic movement and glowing depth, while the subject remains composed, steady, and the clear visual focus. All added visual effects must remain behind the subject and must not cover, cross over, or obscure the face.",
+          "similarity_to_baseline": 0.9416175375238711
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Close paraphrase",
+          "prompt": "Render the image in a stylized form without changing the subject’s identity, pose, or recognizable facial details. Ensure the face remains visible and free of obstruction, while the surrounding scene becomes dense, ornate, and visually overloaded. Use a restricted color scheme of rich blue shades, electric blue accents, warm gold, and metallic highlights. Rebuild the background in a precise geometric arrangement with angular decorative elements, faceted diamond forms, radiating patterns, and layered polygonal shapes. Give the background a chaotic magical quality through glittering trails, crystalline pieces, and an upward diamond-fountain effect emerging from behind the subject. Use dramatic gradients shifting from blue to gold to add strong movement and luminous depth, while keeping the subject calm, stable, and dominant in the composition. Every added effect must stay behind the subject and must not overlap or block the face.",
+          "similarity_to_baseline": 0.9204144589049224
+        }
+      ]
+    },
+    {
+      "prompt_set": "Watercolor Background",
+      "baseline": {
+        "prompt": "Convert this image into a watercolor painting while preserving the background details.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "While preserving the background details, convert this image into a watercolor painting.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Convert this image into a watercolor painting while retaining the background details.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Semantic broadening",
+          "prompt": "Convert this image into a watercolor painting while preserving the main background elements.",
+          "similarity_to_baseline": null
+        }
+      ]
+    },
+    {
+      "prompt_set": "Composition Preservation",
+      "baseline": {
+        "prompt": "Transform this image into an illustration while preserving the original composition.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "While preserving the original composition, transform this image into an illustration.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Transform this image into an illustration while maintaining the original composition.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Semantic broadening",
+          "prompt": "Transform this image into an illustration while preserving the overall layout.",
+          "similarity_to_baseline": null
+        }
+      ]
+    },
+    {
+      "prompt_set": "Oil Painting Detail",
+      "baseline": {
+        "prompt": "Transform this image into an oil painting while preserving fine details.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "While preserving fine details, transform this image into an oil painting.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Transform this image into an oil painting while retaining fine details.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Semantic broadening",
+          "prompt": "Transform this image into an oil painting while preserving important details.",
+          "similarity_to_baseline": null
+        }
+      ]
+    },
+    {
+      "prompt_set": "Cinematic Lighting",
+      "baseline": {
+        "prompt": "Create a cinematic version of this image with dramatic lighting.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "With dramatic lighting, create a cinematic version of this image.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Create a cinematic version of this image with striking lighting.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Style shift",
+          "prompt": "Create a cinematic version of this image with atmospheric lighting.",
+          "similarity_to_baseline": null
+        }
+      ]
+    },
+    {
+      "prompt_set": "Anime Identity",
+      "baseline": {
+        "prompt": "Convert this portrait into anime style while maintaining facial likeness.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "While maintaining facial likeness, convert this portrait into anime style.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Convert this portrait into anime style while preserving facial likeness.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Semantic broadening",
+          "prompt": "Convert this portrait into anime style while preserving the person's identity.",
+          "similarity_to_baseline": null
+        }
+      ]
+    },
+    {
+      "prompt_set": "Pencil Sketch",
+      "baseline": {
+        "prompt": "Convert this image into a pencil sketch while preserving the main features of the subject.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "While preserving the main features of the subject, convert this image into a pencil sketch.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Convert this image into a pencil sketch while retaining the main features of the subject.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Semantic broadening",
+          "prompt": "Convert this image into a pencil sketch while preserving the most important features of the subject.",
+          "similarity_to_baseline": null
+        }
+      ]
+    },
+    {
+      "prompt_set": "Photographic Realism",
+      "baseline": {
+        "prompt": "Enhance this image into a photorealistic photograph while preserving the original scene.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "While preserving the original scene, enhance this image into a photorealistic photograph.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Style shift",
+          "prompt": "Enhance this image into a realistic photograph while preserving the original scene.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Style shift",
+          "prompt": "Enhance this image into a highly realistic photograph while preserving the original scene.",
+          "similarity_to_baseline": null
+        }
+      ]
+    },
+    {
+      "prompt_set": "Minimalist Abstraction",
+      "baseline": {
+        "prompt": "Create a minimalist version of this image while preserving the key elements.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "While preserving the key elements, create a minimalist version of this image.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Create a minimalist version of this image while retaining the key elements.",
+          "similarity_to_baseline": null
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Semantic broadening",
+          "prompt": "Create a simplified version of this image while preserving the key elements.",
+          "similarity_to_baseline": null
+        }
+      ]
+    },
+    {
+      "prompt_set": "Sketch drawing with background geometric details",
+      "baseline": {
+        "prompt": "Create a version that looks like a pencial sketch on white paper.\nPreserve the subject’s identity, pose, and recognizable facial features. Keep the face clear and unobstructed.\nThe background is white, simple and clear. But there should be some randomly placed details in the background made up of geometric patterns, faceted diamonds, radial patterns, and layered polygons.",
+        "similarity_to_baseline": 1.0
+      },
+      "variations": [
+        {
+          "variation_name": "Equivalent",
+          "variation_type": "Word order",
+          "prompt": "Create on white paper a version that looks like a pencial sketch. Preserve the subject’s identity, pose, and recognizable facial features. Keep the face clear and unobstructed. The background is simple, clear, and white, but include some randomly placed background details made up of geometric patterns, faceted diamonds, radial patterns, and layered polygons.",
+          "similarity_to_baseline": 0.947044941610801
+        },
+        {
+          "variation_name": "Variant 1",
+          "variation_type": "Synonym substitution",
+          "prompt": "Create a version that resembles a pencil drawing on white paper. Maintain the subject’s identity, pose, and identifiable facial features. Keep the face visible and unobstructed. Use a clean, simple white background with some randomly positioned details composed of geometric patterns, faceted diamond shapes, radial designs, and layered polygons.",
+          "similarity_to_baseline": 0.9310535521296607
+        },
+        {
+          "variation_name": "Variant 2",
+          "variation_type": "Close paraphrase",
+          "prompt": "Transform the image into a pencil-sketch style on white paper. Preserve who the subject is, their pose, and their recognizable facial details. Make sure the face remains clear and not blocked. Keep the background plain, bright, and white, with a few randomly arranged decorative elements made from geometric patterns, faceted diamonds, radial motifs, and stacked polygon shapes.",
+          "similarity_to_baseline": 0.8718979414058647
+        }
+      ]
+    }
+  ]
+}

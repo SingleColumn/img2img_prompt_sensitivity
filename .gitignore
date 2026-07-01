@@ -1,0 +1,28 @@
+# Python
+backend/.venv/
+**/__pycache__/
+**/*.pyc
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Secrets — keys are loaded from the environment or a local .env, never committed
+.env
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.agents/
+.claude/
+
+# Transitional legacy material (delete once no longer needed; not part of the app)
+legacy/
+side_experiments/
+
+# Local planning files
+CUTOVER_PLAN.md
+
+# Generated run outputs are large and reproducible. Uncomment to stop tracking them:
+# data/output_runs/

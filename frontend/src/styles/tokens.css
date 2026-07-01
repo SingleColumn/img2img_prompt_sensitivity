@@ -1,0 +1,91 @@
+:root {
+  /* ── Everforest Dark palette ─────────────────────────────── */
+  --color-bg0: #2d353b;        /* page / outermost shell */
+  --color-bg1: #343f44;        /* hero, section headers */
+  --color-bg2: #3d484d;        /* cards, prompt review panel */
+  --color-bg3: #475258;        /* inputs, textareas */
+  --color-bg4: #4f585e;        /* hover states */
+
+  --color-fg: #d3c6aa;         /* primary text */
+  --color-fg-dim: #9da9a0;     /* secondary text, labels */
+
+  --color-accent: #a7c080;     /* green — primary accent */
+  --color-accent-text: #2d353b;/* text on green buttons */
+  --color-aqua: #83c092;       /* info states, toast highlights */
+  --color-yellow: #dbbc7f;     /* similarity scores, data values */
+  --color-orange: #e69d6e;     /* warnings */
+  --color-red: #e67e80;        /* delete actions, errors */
+
+  --color-border: rgba(167, 192, 128, 0.18);
+  --color-border-strong: rgba(167, 192, 128, 0.35);
+
+  /* ── Semantic aliases (used throughout app.css) ────────────── */
+  --color-bg-page-1: var(--color-bg0);
+  --color-bg-page-2: var(--color-bg1);
+  --color-bg-glow: transparent;
+
+  --color-surface: var(--color-bg2);
+  --color-surface-raised: var(--color-bg1);
+  --color-surface-muted: var(--color-bg2);
+  --color-surface-accent: var(--color-bg4);
+  --color-surface-tint: rgba(52, 63, 68, 0.45);
+
+  --color-border-hairline: var(--color-border);
+  --color-border-accent: var(--color-border-strong);
+
+  --color-text-primary: var(--color-fg);
+  --color-text-secondary: var(--color-fg-dim);
+  --color-text-tertiary: var(--color-fg-dim);
+  --color-text-on-surface-muted: var(--color-fg-dim);
+
+  --color-accent-hover: #8aad62;
+  --color-accent-on: var(--color-accent-text);
+
+  --color-success: var(--color-accent);
+  --color-success-dot: var(--color-accent);
+  --color-warning: var(--color-orange);
+  --color-warning-dot: var(--color-yellow);
+  --color-danger: var(--color-red);
+  --color-danger-dot: var(--color-red);
+  --color-danger-bg: rgba(230, 126, 128, 0.1);
+  --color-danger-border: rgba(230, 126, 128, 0.3);
+  --color-queued-dot: rgba(157, 169, 160, 0.35);
+
+  /* ── Typography ─────────────────────────────────────────────── */
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-ui: system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.82rem;
+  --text-base: 0.92rem;
+  --text-md: 1.05rem;
+  --text-lg: 1.15rem;
+  --text-xl: 1.5rem;
+  --text-display: clamp(2.5rem, 6vw, 4.8rem);
+
+  --tracking-eyebrow: 0.12em;
+  --leading-body: 1.5;
+  --leading-relaxed: 1.6;
+
+  /* ── Spacing ─────────────────────────────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --panel-padding: var(--space-5);
+  --panel-gap: var(--space-5);
+  --field-gap: var(--space-2);
+  --card-gap: var(--space-4);
+  --grid-gap: var(--space-4);
+
+  /* ── Radii ───────────────────────────────────────────────────── */
+  --radius-sm: 4px;   /* inputs */
+  --radius-md: 8px;   /* cards */
+  --radius-lg: 12px;  /* outer panels */
+
+  --shadow-hero: 0 18px 48px rgba(0, 0, 0, 0.3);
+}
